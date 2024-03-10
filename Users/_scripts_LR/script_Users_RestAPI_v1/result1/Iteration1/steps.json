@@ -1,0 +1,20 @@
+[
+    {
+        "stepId": "STEP1",
+        "stepName": "Rest Request: POST_user",
+        "infFile": "t1.inf",
+        "time": 1709804908702
+    },
+    {
+        "stepId": "STEP2",
+        "stepName": "Rest Request: GET_users",
+        "infFile": "t2.inf",
+        "time": 1709804908824
+    },
+    {
+        "stepId": "STEP3",
+        "stepName": "Rest Request: GET_user_id",
+        "infFile": "t3.inf",
+        "time": 1709804908931
+    }
+]
