@@ -5,12 +5,12 @@
 
 структура:
 _scripts_java - скрипты на Java
-	script_usersRestAPI - заглушка на Java Spring Boot. Обрабатывает клиентские запросы по REST API (GET, POST). 
+	users - заглушка на Java Spring Boot. Обрабатывает клиентские запросы по REST API (GET, POST). 
 	joloka-agent
 
 
 ATTENTION:
-заглушка слушает порт 8090. 
-скрипты работают на порт заглушки 8090.
+заглушка слушает порт 8080. 
+скрипты работают на порт заглушки 8080.
 
 
