@@ -6,5 +6,4 @@ WORKDIR /projects/users/users-load-hwb/Users/_scripts_java/users
 RUN mvn clean package install
 CMD ["java", "-jar", "target/users-0.0.1-SNAPSHOT.jar", "--server.port=8080"]
 
-WORKDIR /projects/users/users-load-hwb/Users/_scripts_java
-ENTRYPOINT ["java", "-jar", "users/jolokia-jvm-1.7.2.jar", "--port=8778"]  CMD ["-start"]
+ENTRYPOINT ["java", "-javaagent:./jolokia-jvm-1.7.2.jar", "port=8778"]
