@@ -6,4 +6,4 @@ WORKDIR /projects/users/users-load-hwb/Users/_scripts_java/users
 RUN mvn clean package install
 ENV JOLOKIA_AGENT_ALLOW_REMOTE true
 EXPOSE 8080 8778
-CMD ["java", "-javaagent:jolokia-jvm-1.7.2.jar", "-jar", "target/users-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-javaagent:jolokia-jvm-1.7.2.jar", "-p", "8778", "-jar", "target/users-0.0.1-SNAPSHOT.jar"]
