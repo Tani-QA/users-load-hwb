@@ -5,4 +5,4 @@ RUN git clone https://github.com/Tani-QA/users-load-hwb.git
 WORKDIR /projects/users/users-load-hwb/Users/_scripts_java/users
 RUN mvn clean package install
 CMD ["java", "-jar", "target/users-0.0.1-SNAPSHOT.jar", "--server.port=8080"]
-CMD ["java", "-jar", "/jolokia-jvm-1.7.2.jar",  "-p", "8778"]
+ENTRYPOINT ["java", "-jar", "/jolokia-jvm-1.7.2.jar", "8778"]
